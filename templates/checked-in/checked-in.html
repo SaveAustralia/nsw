@@ -1,0 +1,47 @@
+<div class="checked-in">
+  <div class="nav">
+    <h3>COVID Safe Check-in</h3>
+  </div>
+  <div class="tabs">
+    <div>
+      <div>Scan</div>
+    </div>
+    <div class="last">
+      <div>Last Check-In<span class="dot"></span></div>
+    </div>
+  </div>
+  <div class="check-img"></div>
+  <h2 ng-bind-html="$ctrl.location | unsafe"></h2>
+  <div class="details">
+    <div class="block">
+      <div><span class="green"></span></div>
+      <div>
+        <p class="t">Checked In</p>
+        <p>{{ $ctrl.timestamp }}</p>
+      </div>
+    </div>
+    <div class="block">
+      <div><span class="grey"></span></div>
+      <div>
+        <p class="t">Checked Out</p>
+        <p>Pending</p>
+      </div>
+    </div>
+    <button type="button" class="btn btn-block btn-primary" ng-click="$ctrl.goBack()">Check out</button>
+  </div>
+  <div class="hint">
+    <div>
+      <div class="info"></div>
+    </div>
+    <div class="help">
+      Help with contact tracing by choosing to check out. For more information, see our <span class="link">Privacy Collection Statement</span> <span class="external-link"></span>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="how">How was your check-in experience?</div>
+    <div class="good">
+      <button class="btn btn-1"> Good</button>
+      <button class="btn btn-1"> Not so good</button>
+    </div>
+  </div>
+</div>
